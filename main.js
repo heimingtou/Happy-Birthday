@@ -3,10 +3,11 @@ const body = document.querySelector("body");
 let candle=document.querySelector(".candle")
 let fire=document.querySelector(".fire")
 let letter=document.querySelector(".letter")
-let h=document.querySelector("h2")
+let h=document.querySelector(".cl")
 let dr=document.querySelector(".dream")
 let music=document.querySelector("#bgMusic")
 let t=Math.floor(Math.random()*400);
+let hd=document.querySelector(".hd")
 let l=Math.random()<0.5? Math.floor(Math.random()*560):Math.floor(Math.random()*(1440-880+1)+560);
 switchBtn.style.left=l+"px";
 switchBtn.style.top=t+"px";
@@ -44,6 +45,7 @@ candle.addEventListener("click",()=>{
 })
 switchBtn.addEventListener("click",()=>{
     music.play();
+    hd.style.display="none"
     lamp.style.display="none";
     body.classList.add("showb");
     cake.classList.add("show")
