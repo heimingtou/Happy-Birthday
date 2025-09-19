@@ -1,0 +1,222 @@
+body{
+     background-color: black;
+    font-family: sans-serif;
+    transition: background-color 1.5s ease; 
+}
+body.showb{
+    background: linear-gradient(to bottom, #fff8e1, #ffe0b2, #ffd180);
+}
+.cake{
+    position: absolute;
+    top: 20em;
+    left: 15rem;
+     opacity: 0; /* bắt đầu ẩn */
+    transition: opacity 2s ease; /* hiệu ứng mượt */
+}
+.candle{
+    position: absolute;
+    top: 7.5rem;
+    left: 30.5rem;
+    height: 45px;
+    width: 8px;
+    background-color: #df2508;
+
+}
+.fire {
+    opacity: 0;
+    transition: opacity 3s ease;
+    position: absolute;
+    top: 5.2rem;
+    left: 30.4rem;
+    width: 10px;
+    height: 35px;
+    background: radial-gradient(circle at bottom, #ff9a00, #ff3d00);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+     animation: flame 0.6s infinite ease-in-out;
+}
+.fire::before,
+.fire::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 30px;
+    top: 0;
+    left: 1px;
+    background: radial-gradient(circle at bottom, #fff176, #ff6d00, #d50000);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation: flame 0.5s infinite alternate;
+}
+
+.first{
+    position: absolute;
+    top: 20em;
+    left: 25rem;
+    height: 80px;
+    width: 180px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(193, 142, 64);
+}
+.second{
+    position: absolute;
+    top: 15rem;
+    left: 26rem;
+    height: 80px;
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background-color: rgb(194, 130, 52);
+}
+.third{
+    position: absolute;
+    top: 10rem;
+    left: 27rem;
+    height: 80px;
+    width: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background-color: rgb(194, 130, 52);
+    
+}
+.drip { position: absolute;
+     top: 20rem; 
+     left:25rem; 
+width: 180px; 
+height: 100px; 
+border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+background: radial-gradient(circle at 17px 0, rgb(206, 239, 202) 20px, transparent 22px);
+ background-size: 30px 30px; /* kích thước sóng */ 
+ background-repeat: repeat-x; }
+ .drip1 { position: absolute;
+     top: 15rem; 
+     left:26rem; 
+width: 150px; 
+height: 150px; 
+border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+background: radial-gradient(circle at 20px 0, rgb(206, 239, 202) 23px, transparent 22px);
+ background-size: 40px 40px; /* kích thước sóng */ 
+ background-repeat: repeat-x; }
+ .drip2 { position: absolute;
+     top: 10rem; 
+     left:27rem; 
+width: 120px; 
+height: 40px; 
+border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+background: radial-gradient(circle at 20px 0, rgb(206, 239, 202) 23px, transparent 22px);
+ background-size: 40px 40px; /* kích thước sóng */ 
+ background-repeat: repeat-x; }
+ .lamp{
+    position: absolute;
+    top: 0;
+    left: 16.5rem;
+ }
+ .lamp-bull{
+    width: 100px;
+    height: 60px;
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+    background-color: rgb(226, 140, 10);
+    position: absolute;
+     top: 15rem; 
+     left:26rem; 
+ }
+ .electric-wire{
+    position: absolute;
+     top: 0rem; 
+     left:29rem; 
+     width: 5px;
+    height: 15rem;
+    background-color: aquamarine;
+ }
+ .swicth{
+    position: absolute;
+     background-color: aliceblue;
+     width: 40px;
+     height: 50px;
+     z-index: 4;
+ }
+ .btn{
+    width: 15px;
+     height: 15px;
+     background-color: aliceblue;
+     border: 1px solid black;
+     margin: 15px 10px;
+ }
+ .light{
+    position: absolute;
+    background: radial-gradient(circle at 30% 30%, #FFF8B0, #FFE680 70%, #FFD966 100%);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.2); /* nhạt hơn */
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+ }
+.cake.show {
+    opacity: 1; /* xuất hiện từ từ */
+}
+@keyframes flame {
+    0%, 100% { transform: scaleY(1) translateX(0); }
+    50% { transform: scaleY(1.3) translateX(2px); }
+}
+.letter{
+     position: absolute;
+    top: 3em;
+    left: 30rem;
+    width: 25rem;
+    height: 40rem;
+    background-color: #fff8e1;
+    border: 15px solid #cbf6c2;
+    opacity: 0;
+    transition: opacity 2s ease
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 5px;
+}
+.text{
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ffire{
+    font-size: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #d50000;
+    z-index: 8;
+}
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* không chặn click */
+    overflow: hidden;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.9;
+    transform: rotate(0deg);
+    border-radius: 2px;
+    animation: fall 3s linear forwards;
+}
+.dream{
+    opacity: 0;
+}
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+}
